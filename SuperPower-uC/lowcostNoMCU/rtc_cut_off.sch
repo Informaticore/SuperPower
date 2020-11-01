@@ -1,0 +1,490 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "SuperPower-uC"
+Date "2020-09-20"
+Rev "0.1"
+Comp ""
+Comment1 "Licence: CERN-OHL-W"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PCF8563T:PCF8563T U7
+U 1 1 5F7FEE8D
+P 4650 4300
+F 0 "U7" H 4650 4625 50  0000 C CNN
+F 1 "PCF8563T" H 4650 4534 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4700 3950 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/PCF8563.pdf" H 4900 4500 50  0001 C CNN
+F 4 "C7440" H 4650 4300 50  0001 C CNN "LCSC"
+	1    4650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F801372
+P 4200 4550
+F 0 "#PWR0106" H 4200 4300 50  0001 C CNN
+F 1 "GND" H 4205 4377 50  0000 C CNN
+F 2 "" H 4200 4550 50  0001 C CNN
+F 3 "" H 4200 4550 50  0001 C CNN
+	1    4200 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4550 4200 4500
+Wire Wire Line
+	4200 4500 4250 4500
+$Comp
+L Device:C C4
+U 1 1 5F801D7F
+P 5550 4350
+F 0 "C4" H 5350 4300 50  0000 L CNN
+F 1 "0.1µF" H 5200 4400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5588 4200 50  0001 C CNN
+F 3 "~" H 5550 4350 50  0001 C CNN
+F 4 "C14858" H 5550 4350 50  0001 C CNN "LCSC"
+	1    5550 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Crystal Y2
+U 1 1 5F802F79
+P 3900 4200
+F 0 "Y2" H 3900 4468 50  0000 C CNN
+F 1 "32.768KHz" H 3900 4377 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 3900 4200 50  0001 C CNN
+F 3 "1901081604_Seiko-Epson-Q13FC1350000400_C32346.pdf" H 3900 4200 50  0001 C CNN
+F 4 "C32346" H 3900 4200 50  0001 C CNN "LCSC"
+	1    3900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5F8043AA
+P 5550 4550
+F 0 "#PWR0107" H 5550 4300 50  0001 C CNN
+F 1 "GND" H 5555 4377 50  0000 C CNN
+F 2 "" H 5550 4550 50  0001 C CNN
+F 3 "" H 5550 4550 50  0001 C CNN
+	1    5550 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4550 5550 4500
+Wire Wire Line
+	4250 4200 4050 4200
+Wire Wire Line
+	3750 4200 3750 4300
+Wire Wire Line
+	3750 4300 4250 4300
+NoConn ~ 5050 4300
+$Comp
+L XC6206P332MR:XC6206P332MR U8
+U 1 1 5F806B5A
+P 7300 1950
+F 0 "U8" H 7300 2165 50  0000 C CNN
+F 1 "XC6206P332MR" H 7300 2074 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7350 1600 50  0001 C CNN
+F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 7500 1950 50  0001 C CNN
+F 4 "C5446" H 7300 1950 50  0001 C CNN "LCSC"
+	1    7300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5F8078F3
+P 6800 2250
+F 0 "C5" H 6915 2296 50  0000 L CNN
+F 1 "0.1µF" H 6915 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6838 2100 50  0001 C CNN
+F 3 "~" H 6800 2250 50  0001 C CNN
+F 4 "C14858" H 6800 2250 50  0001 C CNN "LCSC"
+	1    6800 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2050 6800 2050
+Wire Wire Line
+	6800 2050 6800 2100
+Wire Wire Line
+	7300 2250 7300 2350
+Wire Wire Line
+	7300 2450 6800 2450
+Wire Wire Line
+	6800 2450 6800 2400
+$Comp
+L Device:R R8
+U 1 1 5F8095DB
+P 7700 2450
+F 0 "R8" V 7800 2500 50  0000 C CNN
+F 1 "10k" V 7800 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7630 2450 50  0001 C CNN
+F 3 "~" H 7700 2450 50  0001 C CNN
+F 4 "C25804" H 7700 2450 50  0001 C CNN "LCSC"
+	1    7700 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5F80A0C7
+P 7700 2350
+F 0 "R7" V 7600 2400 50  0000 C CNN
+F 1 "10k" V 7600 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7630 2350 50  0001 C CNN
+F 3 "~" H 7700 2350 50  0001 C CNN
+F 4 "C25804" H 7700 2350 50  0001 C CNN "LCSC"
+	1    7700 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 2350 7550 2350
+Connection ~ 7300 2350
+Wire Wire Line
+	7300 2350 7300 2450
+Wire Wire Line
+	7300 2450 7550 2450
+Connection ~ 7300 2450
+$Comp
+L power:GND #PWR0108
+U 1 1 5F80C4A4
+P 6550 2050
+F 0 "#PWR0108" H 6550 1800 50  0001 C CNN
+F 1 "GND" H 6555 1877 50  0000 C CNN
+F 2 "" H 6550 2050 50  0001 C CNN
+F 3 "" H 6550 2050 50  0001 C CNN
+	1    6550 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2050 6550 2050
+Connection ~ 6800 2050
+$Comp
+L TCA6408APWR:TCA6408A U9
+U 1 1 5F8103C2
+P 4950 2450
+F 0 "U9" H 5200 2700 50  0000 C CNN
+F 1 "TCA6408A" H 4850 2700 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 5000 2950 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tca6408a.pdf?ts=1602171918658&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTCA6408A" H 5200 2700 50  0001 C CNN
+F 4 "C206177" H 5200 3100 50  0001 C CNN "LCSC"
+	1    4950 2450
+	1    0    0    -1  
+$EndComp
+Text HLabel 1350 1200 0    50   Input ~ 0
+VBAT
+Wire Wire Line
+	4550 2300 4500 2300
+NoConn ~ 4550 2500
+Wire Wire Line
+	4500 2300 4500 2400
+Wire Wire Line
+	4500 2400 4550 2400
+$Comp
+L power:GND #PWR0109
+U 1 1 5F81AC3F
+P 3400 3050
+F 0 "#PWR0109" H 3400 2800 50  0001 C CNN
+F 1 "GND" H 3405 2877 50  0000 C CNN
+F 2 "" H 3400 3050 50  0001 C CNN
+F 3 "" H 3400 3050 50  0001 C CNN
+	1    3400 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3000 3400 3050
+$Comp
+L Transistor_FET:2N7002 Q1
+U 1 1 5F81E351
+P 3500 2600
+F 0 "Q1" H 3705 2646 50  0000 L CNN
+F 1 "2N7002" H 3705 2555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3700 2525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 3500 2600 50  0001 L CNN
+F 4 "" H 3500 2600 50  0001 C CNN "Field4"
+F 5 "C8545" H 3500 2600 50  0001 C CNN "LCSC"
+	1    3500 2600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2800 3400 3000
+Connection ~ 3400 3000
+Wire Wire Line
+	3400 2350 3400 2400
+Text HLabel 1350 950  0    50   Input ~ 0
+SCL
+Text HLabel 1350 850  0    50   BiDi ~ 0
+SDA
+Text HLabel 1350 1450 0    50   Output ~ 0
+3v3V_EN
+Text HLabel 1350 1550 0    50   Output ~ 0
+5V_EN
+Text HLabel 1350 1900 0    50   Output ~ 0
+INT
+NoConn ~ 1200 350 
+Wire Wire Line
+	5050 4200 5550 4200
+Connection ~ 5550 4200
+Connection ~ 4500 2300
+Text Label 1750 850  2    50   ~ 0
+SDA
+Text Label 1750 950  2    50   ~ 0
+SCL
+Text Label 1750 1200 2    50   ~ 0
+VBAT
+Text Label 1750 1900 2    50   ~ 0
+INT
+Text Label 1750 1450 2    50   ~ 0
+3.3_EN
+Text Label 1750 1550 2    50   ~ 0
+5V_EN
+Text Label 4050 4400 0    50   ~ 0
+INT
+Wire Wire Line
+	4050 4400 4250 4400
+Text Label 3200 2350 0    50   ~ 0
+INT
+Wire Wire Line
+	3200 2350 3400 2350
+Text Label 5600 2600 2    50   ~ 0
+INT
+Wire Wire Line
+	5350 2600 5600 2600
+Wire Wire Line
+	1350 1900 1750 1900
+Wire Wire Line
+	1350 1550 1750 1550
+Wire Wire Line
+	1350 1450 1750 1450
+Wire Wire Line
+	1350 1200 1750 1200
+Wire Wire Line
+	1350 950  1750 950 
+Wire Wire Line
+	1350 850  1750 850 
+Text Label 5600 2400 2    50   ~ 0
+SDA
+Text Label 5600 2500 2    50   ~ 0
+SCL
+Wire Wire Line
+	5350 2400 5600 2400
+Wire Wire Line
+	5350 2500 5600 2500
+Text Label 5600 2300 2    50   ~ 0
+VBAT
+Wire Wire Line
+	5350 2300 5600 2300
+Text Label 8100 2350 2    50   ~ 0
+SDA
+Text Label 8100 2450 2    50   ~ 0
+SCL
+Wire Wire Line
+	7850 2350 8100 2350
+Wire Wire Line
+	7850 2450 8100 2450
+Text Label 7900 2050 2    50   ~ 0
+VBAT
+Wire Wire Line
+	7650 2050 7900 2050
+Text Label 4300 2300 0    50   ~ 0
+VBAT
+Wire Wire Line
+	4300 2300 4500 2300
+Text Label 5800 4200 2    50   ~ 0
+VBAT
+Wire Wire Line
+	5550 4200 5800 4200
+Text Label 5350 4400 2    50   ~ 0
+SCL
+Wire Wire Line
+	5050 4400 5350 4400
+Text Label 5350 4500 2    50   ~ 0
+SDA
+Wire Wire Line
+	5050 4500 5350 4500
+Text Notes 650  750  0    50   ~ 0
+Labels\n
+Wire Notes Line
+	3400 3550 6100 3550
+Wire Notes Line
+	6100 3550 6100 5100
+Wire Notes Line
+	6100 5100 3400 5100
+Wire Notes Line
+	3400 5100 3400 3550
+Wire Notes Line
+	6250 1550 8350 1550
+Wire Notes Line
+	8350 1550 8350 2750
+Wire Notes Line
+	6250 2750 6250 1550
+Wire Notes Line
+	6250 2750 8350 2750
+Text Notes 6250 1650 0    50   ~ 0
+I2C pullup\n
+Text Notes 3450 3700 0    50   ~ 0
+RTC\n
+Text Notes 2850 1450 0    50   ~ 0
+IO Expander
+Wire Notes Line
+	550  2150 550  600 
+Text HLabel 1350 2000 0    50   Input ~ 0
+CHARGE-DISABLE
+Text Label 1750 2000 2    50   ~ 0
+CH_DIS
+Wire Wire Line
+	1750 2000 1350 2000
+Text Label 6900 2450 0    50   ~ 0
+V_I2C
+Text HLabel 1350 1650 0    50   Input ~ 0
+3v3_MCU
+Wire Wire Line
+	1350 1650 1750 1650
+Text Label 1750 1650 2    50   ~ 0
+3v3_MCU
+Wire Notes Line
+	550  600  1850 600 
+Wire Notes Line
+	1850 600  1850 2150
+Wire Notes Line
+	1850 2150 550  2150
+Wire Notes Line
+	2800 3450 2800 1300
+Wire Notes Line
+	2800 1300 6150 1300
+Wire Notes Line
+	2800 3450 6150 3450
+Wire Notes Line
+	6150 1300 6150 3450
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F96E9B6
+P 3400 2350
+F 0 "TP2" H 3458 2468 50  0000 L CNN
+F 1 "TestPoint" H 3458 2377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3600 2350 50  0001 C CNN
+F 3 "~" H 3600 2350 50  0001 C CNN
+	1    3400 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3400 2350
+Wire Wire Line
+	5350 2700 5600 2700
+Wire Wire Line
+	5350 2800 5600 2800
+Wire Wire Line
+	5350 2900 5600 2900
+Wire Wire Line
+	5350 3000 5600 3000
+Text Label 5600 2700 2    50   ~ 0
+IO7
+Text Label 5600 2800 2    50   ~ 0
+IO6
+Text Label 5600 2900 2    50   ~ 0
+IO5
+Text Label 5600 3000 2    50   ~ 0
+IO4
+Text Label 6900 3200 0    50   ~ 0
+INT
+Wire Wire Line
+	7250 3200 6900 3200
+Text Label 6900 3000 0    50   ~ 0
+SDA
+Text Label 6900 3100 0    50   ~ 0
+SCL
+Wire Wire Line
+	7250 3000 6900 3000
+Wire Wire Line
+	7250 3100 6900 3100
+Wire Wire Line
+	7250 3400 6900 3400
+Wire Wire Line
+	7250 3500 6900 3500
+Wire Wire Line
+	7250 3600 6900 3600
+Wire Wire Line
+	7250 3700 6900 3700
+Text Label 6900 3400 0    50   ~ 0
+IO7
+Text Label 6900 3500 0    50   ~ 0
+IO6
+Text Label 6900 3600 0    50   ~ 0
+IO5
+Text Label 6900 3700 0    50   ~ 0
+IO4
+Wire Wire Line
+	3400 3000 4550 3000
+Text Label 4200 2600 0    50   ~ 0
+IO_INT
+Wire Wire Line
+	3700 2600 4550 2600
+Text Label 4200 2900 0    50   ~ 0
+CH_DIS
+Text Label 4200 2800 0    50   ~ 0
+5V_EN
+Text Label 4200 2700 0    50   ~ 0
+3.3_EN
+Wire Wire Line
+	4200 2700 4550 2700
+Wire Wire Line
+	4200 2800 4550 2800
+Wire Wire Line
+	4200 2900 4550 2900
+Text Label 6900 4100 0    50   ~ 0
+IO_INT
+Text Label 6900 3800 0    50   ~ 0
+CH_DIS
+Text Label 6900 3900 0    50   ~ 0
+5V_EN
+Text Label 6900 4000 0    50   ~ 0
+3.3_EN
+Wire Wire Line
+	6900 4000 7250 4000
+Wire Wire Line
+	6900 3900 7250 3900
+Wire Wire Line
+	6900 3800 7250 3800
+Wire Wire Line
+	6900 4100 7250 4100
+$Comp
+L power:GND #PWR0117
+U 1 1 5FAB2E06
+P 6750 3350
+F 0 "#PWR0117" H 6750 3100 50  0001 C CNN
+F 1 "GND" H 6755 3177 50  0000 C CNN
+F 2 "" H 6750 3350 50  0001 C CNN
+F 3 "" H 6750 3350 50  0001 C CNN
+	1    6750 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3350 6750 3300
+Wire Wire Line
+	6750 3300 7250 3300
+Wire Notes Line
+	8200 2850 8200 4600
+Wire Notes Line
+	6250 4600 6250 2850
+Wire Notes Line
+	6250 2850 8200 2850
+Text Notes 6300 2950 0    50   ~ 0
+Data connector
+$Comp
+L Connector:Conn_01x12_Female J6
+U 1 1 5FACE17B
+P 7450 3500
+F 0 "J6" H 7478 3476 50  0000 L CNN
+F 1 "Conn_01x12_Female" H 7478 3385 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 7450 3500 50  0001 C CNN
+F 3 "~" H 7450 3500 50  0001 C CNN
+	1    7450 3500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8200 4600 6250 4600
+$EndSCHEMATC
