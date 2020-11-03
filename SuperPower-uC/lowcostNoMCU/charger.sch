@@ -474,8 +474,6 @@ $EndComp
 Wire Wire Line
 	5900 2450 6000 2450
 Wire Wire Line
-	2800 4050 3100 4050
-Wire Wire Line
 	4100 3550 4100 3700
 $Comp
 L power:PWR_FLAG #FLG?
@@ -567,12 +565,6 @@ F 3 "" H 3300 4150 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Connection ~ 3300 3850
-Wire Wire Line
-	2800 4150 3100 4150
-Text Label 3100 4050 2    50   ~ 0
-D+
-Text Label 3100 4150 2    50   ~ 0
-D-
 Wire Notes Line
 	1500 3050 5250 3050
 Wire Notes Line
@@ -622,4 +614,6 @@ Wire Wire Line
 Wire Wire Line
 	2800 3850 3300 3850
 NoConn ~ 2400 4450
+NoConn ~ 2800 4150
+NoConn ~ 2800 4050
 $EndSCHEMATC
