@@ -10,4 +10,5 @@
   (lib (name SOLDERJUMPER_4_BRIDGED_1C)(type KiCad)(uri ${KIPRJMOD}/../components/SOLDERJUMPER_4_BRIDGED_1C)(options "")(descr ""))
   (lib (name ext_input)(type KiCad)(uri ${KIPRJMOD}/../components/ext_input/ext_input.pretty)(options "")(descr ""))
   (lib (name BarrelJack_Wuerth_6941xx301002)(type KiCad)(uri ${KIPRJMOD}/../components/BarrelJack_Wuerth_6941xx301002)(options "")(descr ""))
+  (lib (name DMP3028LSD)(type KiCad)(uri ${KIPRJMOD}/../components/DMP3028LSD)(options "")(descr ""))
 )
