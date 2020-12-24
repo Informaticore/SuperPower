@@ -518,7 +518,7 @@ U 1 1 5FD97812
 P 3800 1700
 F 0 "BT1" H 3918 1841 50  0000 L CNN
 F 1 "Battery_Cell_Holder_18650_SMT_1042" H 3900 1700 50  0001 L CNN
-F 2 "Battery:BatteryHolder_Keystone_1042_1x18650" V 3800 1760 50  0001 C CNN
+F 2 "BATTERY_CELL_HOLDER_18650_SMT_1042:BatteryHolder_Keystone_1042_1x18650" V 3800 1760 50  0001 C CNN
 F 3 "https://www.keyelco.com/product-pdf.cfm?p=918" V 3800 1760 50  0001 C CNN
 F 4 "Keystone" H 3918 1750 50  0000 L CNN "Mfr_name"
 F 5 "1042" H 3918 1659 50  0000 L CNN "Mfr_no"

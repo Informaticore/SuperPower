@@ -12,4 +12,5 @@
   (lib (name BarrelJack_Wuerth_6941xx301002)(type KiCad)(uri ${KIPRJMOD}/../components/BarrelJack_Wuerth_6941xx301002)(options "")(descr ""))
   (lib (name DMP3028LSD)(type KiCad)(uri ${KIPRJMOD}/../components/DMP3028LSD)(options "")(descr ""))
   (lib (name DMN3018SSD)(type KiCad)(uri ${KIPRJMOD}/../components/DMN3018SSD)(options "")(descr ""))
+  (lib (name BATTERY_CELL_HOLDER_18650_SMT_1042)(type KiCad)(uri ${KIPRJMOD}/../components/BATTERY_CELL_HOLDER_18650_SMT_1042)(options "")(descr ""))
 )
