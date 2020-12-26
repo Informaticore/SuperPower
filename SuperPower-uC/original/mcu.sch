@@ -168,18 +168,10 @@ F 3 "" H 3200 2150 50  0001 C CNN
 $EndComp
 Text Notes 2900 750  0    50   ~ 10
 USB - UART bridge
-Wire Wire Line
-	9500 4400 9250 4400
-Wire Wire Line
-	9500 4700 9250 4700
-Wire Wire Line
-	9250 4600 9500 4600
 Text Label 9500 4600 2    50   ~ 0
 RXD
 Text Label 9500 4500 2    50   ~ 0
 TXD
-Wire Wire Line
-	9250 4500 9500 4500
 $Comp
 L power:GND #PWR051
 U 1 1 5F824CEA
@@ -193,10 +185,6 @@ F 3 "" H 7900 6050 50  0001 C CNN
 $EndComp
 Text Label 7400 4400 0    50   ~ 0
 EN
-Wire Wire Line
-	7400 4400 7650 4400
-Wire Wire Line
-	9250 5500 9500 5500
 $Comp
 L Device:R_Small R36
 U 1 1 5F8DFE5B
@@ -352,64 +340,36 @@ Wire Notes Line
 	650  3500 650  650 
 Text Label 9500 5500 2    50   ~ 0
 IO0
-Wire Wire Line
-	9250 5100 9500 5100
 Text Label 9500 5100 2    50   ~ 0
 IO5
-Wire Wire Line
-	9250 5400 9500 5400
 Text Label 9500 5400 2    50   ~ 0
 IO4
-Wire Wire Line
-	7650 5400 7400 5400
 Text Label 7400 5400 0    50   ~ 0
 IO14
 Wire Wire Line
 	8800 5850 8800 6100
 Text Label 8800 6100 1    50   ~ 0
 IO15
-Wire Wire Line
-	9250 5300 9500 5300
 Text Label 9500 5300 2    50   ~ 0
 IO16
-Wire Wire Line
-	9250 5200 9500 5200
 Text Label 9500 5200 2    50   ~ 0
 IO17
-Wire Wire Line
-	9250 5000 9500 5000
 Text Label 9500 5000 2    50   ~ 0
 IO18
-Wire Wire Line
-	9250 4900 9500 4900
 Text Label 9500 4900 2    50   ~ 0
 IO19
-Wire Wire Line
-	9250 4300 9500 4300
 Text Label 9500 4300 2    50   ~ 0
 IO23
-Wire Wire Line
-	7650 5100 7400 5100
 Text Label 7400 5100 0    50   ~ 0
 IO25
-Wire Wire Line
-	7650 5200 7400 5200
 Text Label 7400 5200 0    50   ~ 0
 IO26
-Wire Wire Line
-	7650 5300 7400 5300
 Text Label 7400 5300 0    50   ~ 0
 IO27
-Wire Wire Line
-	7650 5000 7400 5000
 Text Label 7400 5000 0    50   ~ 0
 IO33
-Wire Wire Line
-	7650 4700 7400 4700
 Text Label 7400 4700 0    50   ~ 0
 IO34
-Wire Wire Line
-	7650 4800 7400 4800
 Text Label 7400 4800 0    50   ~ 0
 IO35
 $Comp
@@ -424,30 +384,26 @@ F 4 "C82899" H 8450 4600 50  0001 C CNN "LCSC"
 	1    8450 4600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9650 4250 9650 4150
 $Comp
 L power:GND #PWR052
 U 1 1 5FB0D332
-P 9650 4250
-F 0 "#PWR052" H 9650 4000 50  0001 C CNN
-F 1 "GND" H 9655 4077 50  0000 C CNN
-F 2 "" H 9650 4250 50  0001 C CNN
-F 3 "" H 9650 4250 50  0001 C CNN
-	1    9650 4250
+P 9050 3700
+F 0 "#PWR052" H 9050 3450 50  0001 C CNN
+F 1 "GND" H 9055 3527 50  0000 C CNN
+F 2 "" H 9050 3700 50  0001 C CNN
+F 3 "" H 9050 3700 50  0001 C CNN
+	1    9050 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7000 4300 7000 4200
 $Comp
 L power:GND #PWR049
 U 1 1 5FB122F6
-P 7000 4300
-F 0 "#PWR049" H 7000 4050 50  0001 C CNN
-F 1 "GND" H 7005 4127 50  0000 C CNN
-F 2 "" H 7000 4300 50  0001 C CNN
-F 3 "" H 7000 4300 50  0001 C CNN
-	1    7000 4300
+P 7800 3700
+F 0 "#PWR049" H 7800 3450 50  0001 C CNN
+F 1 "GND" H 7805 3527 50  0000 C CNN
+F 2 "" H 7800 3700 50  0001 C CNN
+F 3 "" H 7800 3700 50  0001 C CNN
+	1    7800 3700
 	1    0    0    -1  
 $EndComp
 NoConn ~ 9250 4800
@@ -464,18 +420,12 @@ Wire Wire Line
 Wire Wire Line
 	9350 4100 9250 4100
 Wire Wire Line
-	9650 4150 9350 4150
+	9500 4150 9350 4150
 Connection ~ 9350 4150
 Wire Wire Line
 	9350 4150 9350 4100
 Wire Wire Line
-	7000 4200 7650 4200
-NoConn ~ 8200 5850
-NoConn ~ 8300 5850
-NoConn ~ 8400 5850
-NoConn ~ 8500 5850
-NoConn ~ 8600 5850
-NoConn ~ 8700 5850
+	7550 4200 7650 4200
 Wire Wire Line
 	5450 2800 6050 2800
 Wire Wire Line
@@ -560,138 +510,60 @@ NoConn ~ 5450 3100
 NoConn ~ 5450 3200
 NoConn ~ 5450 3300
 NoConn ~ 5450 3400
-Wire Wire Line
-	7650 4500 7400 4500
 Text Label 7400 4500 0    50   ~ 0
 IO36
-Wire Wire Line
-	7650 4600 7400 4600
 Text Label 7400 4600 0    50   ~ 0
 IO39
 Text Notes 5950 3800 0    50   ~ 10
 Top of the board
-Wire Wire Line
-	6400 4600 6650 4600
-Text Label 6650 4600 2    50   ~ 0
+Text Label 6500 4800 2    50   ~ 0
 IO35
-Wire Wire Line
-	6400 4500 6650 4500
-Text Label 6650 4500 2    50   ~ 0
+Text Label 6500 4700 2    50   ~ 0
 IO34
-Wire Wire Line
-	6400 4400 6650 4400
-Text Label 6650 4400 2    50   ~ 0
+Text Label 6500 4600 2    50   ~ 0
 IO39
-Wire Wire Line
-	6400 4300 6650 4300
-Text Label 6650 4300 2    50   ~ 0
+Text Label 6500 4500 2    50   ~ 0
 IO36
-Wire Wire Line
-	6400 4200 6650 4200
-Text Label 6650 4200 2    50   ~ 0
+Text Label 6500 4400 2    50   ~ 0
 EN
-Wire Wire Line
-	6400 4900 6650 4900
-Text Label 6650 4900 2    50   ~ 0
+Text Label 6500 5100 2    50   ~ 0
 IO25
-Wire Wire Line
-	6400 5200 6650 5200
-Text Label 6650 5200 2    50   ~ 0
+Text Label 6500 5400 2    50   ~ 0
 IO14
-Wire Wire Line
-	6400 5100 6650 5100
-Text Label 6650 5100 2    50   ~ 0
+Text Label 6500 5300 2    50   ~ 0
 IO27
-Wire Wire Line
-	6400 5000 6650 5000
-Text Label 6650 5000 2    50   ~ 0
+Text Label 6500 5200 2    50   ~ 0
 IO26
-Wire Wire Line
-	6400 4800 6650 4800
-Text Label 6650 4800 2    50   ~ 0
+Text Label 6500 5000 2    50   ~ 0
 IO33
-Wire Wire Line
-	10400 4300 10150 4300
-Text Label 10150 4300 0    50   ~ 0
+Text Label 10100 4400 0    50   ~ 0
 SCL
-Wire Wire Line
-	10400 4600 10150 4600
-Text Label 10150 4600 0    50   ~ 0
+Text Label 10100 4700 0    50   ~ 0
 SDA
-Wire Wire Line
-	10400 4500 10150 4500
-Text Label 10150 4500 0    50   ~ 0
+Text Label 10100 4600 0    50   ~ 0
 RXD
-Wire Wire Line
-	10400 4400 10150 4400
-Text Label 10150 4400 0    50   ~ 0
+Text Label 10100 4500 0    50   ~ 0
 TXD
-Wire Wire Line
-	10400 4200 10150 4200
-Text Label 10150 4200 0    50   ~ 0
+Text Label 10100 4300 0    50   ~ 0
 IO23
-Wire Wire Line
-	10400 4100 10150 4100
-Text Label 10150 4100 0    50   ~ 0
+Text Label 10100 5500 0    50   ~ 0
 IO0
-Wire Wire Line
-	10400 4900 10150 4900
-Text Label 10150 4900 0    50   ~ 0
+Text Label 10100 5100 0    50   ~ 0
 IO5
-Wire Wire Line
-	10400 5200 10150 5200
-Text Label 10150 5200 0    50   ~ 0
+Text Label 10100 5400 0    50   ~ 0
 IO4
-Wire Wire Line
-	10400 5100 10150 5100
-Text Label 10150 5100 0    50   ~ 0
+Text Label 10100 5300 0    50   ~ 0
 IO16
-Wire Wire Line
-	10400 5000 10150 5000
-Text Label 10150 5000 0    50   ~ 0
+Text Label 10100 5200 0    50   ~ 0
 IO17
-Wire Wire Line
-	10400 4800 10150 4800
-Text Label 10150 4800 0    50   ~ 0
+Text Label 10100 5000 0    50   ~ 0
 IO18
-Wire Wire Line
-	10400 4700 10150 4700
-Text Label 10150 4700 0    50   ~ 0
+Text Label 10100 4900 0    50   ~ 0
 IO19
-Wire Wire Line
-	10400 5400 10150 5400
-Text Label 10150 5400 0    50   ~ 0
+Text Label 10100 5700 0    50   ~ 0
 IO15
-Text Notes 5750 4500 0    50   ~ 0
+Text Notes 6700 4600 0    50   ~ 0
 Sensor_VP\nSensor_VN
-$Comp
-L power:GND #PWR047
-U 1 1 5F8A7C35
-P 6750 4200
-F 0 "#PWR047" H 6750 3950 50  0001 C CNN
-F 1 "GND" H 6755 4027 50  0000 C CNN
-F 2 "" H 6750 4200 50  0001 C CNN
-F 3 "" H 6750 4200 50  0001 C CNN
-	1    6750 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 4200 6750 4100
-Wire Wire Line
-	6400 4100 6750 4100
-$Comp
-L power:GND #PWR053
-U 1 1 5F8B01AA
-P 9750 5600
-F 0 "#PWR053" H 9750 5350 50  0001 C CNN
-F 1 "GND" H 9755 5427 50  0000 C CNN
-F 2 "" H 9750 5600 50  0001 C CNN
-F 3 "" H 9750 5600 50  0001 C CNN
-	1    9750 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9750 5600 9750 5500
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5F8C8948
@@ -712,29 +584,25 @@ Wire Wire Line
 Connection ~ 4850 950 
 Wire Wire Line
 	4850 950  4850 1000
-Wire Wire Line
-	6400 5600 6650 5600
-Text Label 6650 5600 2    50   ~ 0
-VBUS1
+Text Label 6650 6100 2    50   ~ 0
+5V
 $Comp
 L power:GND #PWR050
 U 1 1 5F9E523C
-P 7000 5550
-F 0 "#PWR050" H 7000 5300 50  0001 C CNN
-F 1 "GND" H 7005 5377 50  0000 C CNN
-F 2 "" H 7000 5550 50  0001 C CNN
-F 3 "" H 7000 5550 50  0001 C CNN
-	1    7000 5550
+P 7100 5650
+F 0 "#PWR050" H 7100 5400 50  0001 C CNN
+F 1 "GND" H 7105 5477 50  0000 C CNN
+F 2 "" H 7100 5650 50  0001 C CNN
+F 3 "" H 7100 5650 50  0001 C CNN
+	1    7100 5650
 	1    0    0    -1  
 $EndComp
 Text Label 2050 1400 2    50   ~ 0
 3v3
 Wire Wire Line
-	9750 5500 10400 5500
-Text Label 6650 5800 2    50   ~ 0
-5V
-Text Label 10150 5800 0    50   ~ 0
-3v3
+	9950 5600 10350 5600
+Text Label 6650 6000 2    50   ~ 0
+CMD
 Text Notes 2500 6150 0    50   ~ 0
 Indicator LEDs showing\nthe serial bus status.\nAn RSTb pull-up resistor
 Text Notes 9700 3300 0    50   ~ 0
@@ -745,8 +613,6 @@ Text HLabel 1250 1600 0    50   Input ~ 0
 5V
 Text HLabel 1250 1400 0    50   Input ~ 0
 3v3
-Text Label 9950 5600 0    50   ~ 0
-3v3_MCU
 Text Label 2050 2250 2    50   ~ 0
 EN_5V
 Text Label 2050 2050 2    50   ~ 0
@@ -857,8 +723,6 @@ EN_3V3
 Text Label 8100 6150 1    50   ~ 0
 EN_5V
 Wire Wire Line
-	7300 5500 7650 5500
-Wire Wire Line
 	8100 5850 8100 6150
 Wire Notes Line
 	800  6200 800  7650
@@ -868,7 +732,7 @@ Wire Notes Line
 	800  6200 3750 6200
 Wire Notes Line
 	2450 4600 2450 7650
-Text Label 7250 4300 0    50   ~ 0
+Text Label 7300 4300 0    50   ~ 0
 3v3_MCU
 Text HLabel 1250 1000 0    50   Input ~ 0
 VBUS1
@@ -935,18 +799,12 @@ Wire Wire Line
 	5450 2500 5650 2500
 Wire Wire Line
 	5650 2600 5450 2600
-Text Label 6800 5400 2    50   ~ 0
+Text Label 6650 5700 2    50   ~ 0
 EN_5V
-Text Label 6800 5300 2    50   ~ 0
+Text Label 6500 5500 2    50   ~ 0
 EN_3V3
-Wire Wire Line
-	6800 5300 6400 5300
-Wire Wire Line
-	6400 5400 6800 5400
-Text Label 9900 5300 0    50   ~ 0
+Text Label 9950 5600 0    50   ~ 0
 RGBW_LED
-Wire Wire Line
-	10400 5300 9900 5300
 Wire Notes Line
 	1000 2750 1050 2750
 Wire Notes Line
@@ -988,7 +846,7 @@ Wire Wire Line
 Text Notes 900  6300 0    50   ~ 10
 RGBW LED
 Wire Wire Line
-	9950 5600 10400 5600
+	10100 5700 10350 5700
 $Comp
 L power:PWR_FLAG #FLG08
 U 1 1 5FDEA730
@@ -1106,74 +964,14 @@ F 44 "ManWithNoName" H 3050 5450 50  0001 C CNN "Designer"
 	1    3050 5450
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:Conn_01x18_Female J7
-U 1 1 5FD04923
-P 6200 5000
-F 0 "J7" H 6092 3875 50  0000 C CNN
-F 1 "mcu_pinout" H 6092 3966 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x18_P2.54mm_Vertical" H 6200 5000 50  0001 C CNN
-F 3 "~" H 6200 5000 50  0001 C CNN
-	1    6200 5000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x18_Female J8
-U 1 1 5FD07E44
-P 10600 4900
-F 0 "J8" H 10500 5950 50  0000 L CNN
-F 1 "mcu_pinout" H 10450 5850 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x18_P2.54mm_Vertical" H 10600 4900 50  0001 C CNN
-F 3 "~" H 10600 4900 50  0001 C CNN
-	1    10600 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	10400 5800 10150 5800
+	10350 5900 10100 5900
 Wire Wire Line
-	6650 5800 6400 5800
-$Comp
-L power:GND #PWR048
-U 1 1 5FD1F549
-P 6850 5750
-F 0 "#PWR048" H 6850 5500 50  0001 C CNN
-F 1 "GND" H 6855 5577 50  0000 C CNN
-F 2 "" H 6850 5750 50  0001 C CNN
-F 3 "" H 6850 5750 50  0001 C CNN
-	1    6850 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR054
-U 1 1 5FD1F820
-P 9950 5750
-F 0 "#PWR054" H 9950 5500 50  0001 C CNN
-F 1 "GND" H 9955 5577 50  0000 C CNN
-F 2 "" H 9950 5750 50  0001 C CNN
-F 3 "" H 9950 5750 50  0001 C CNN
-	1    9950 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 5700 9950 5750
-Wire Wire Line
-	9950 5700 10400 5700
-Wire Wire Line
-	6850 5700 6850 5750
-Wire Wire Line
-	6400 5700 6850 5700
-Wire Wire Line
-	7000 5500 7000 5550
-Wire Wire Line
-	6400 5500 7000 5500
+	10100 5800 10350 5800
 Text Label 7250 4900 0    50   ~ 0
 ~SMBALERT
-Wire Wire Line
-	7250 4900 7650 4900
-Text Label 6850 4700 2    50   ~ 0
+Text Label 6550 4900 2    50   ~ 0
 ~SMBALERT
-Wire Wire Line
-	6400 4700 6850 4700
 Wire Notes Line
 	650  650  2700 650 
 Wire Notes Line
@@ -1247,8 +1045,6 @@ F 3 "~" H 2250 2250 50  0001 C CNN
 	1    2050 2250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7250 4300 7650 4300
 Wire Notes Line
 	1000 2350 1000 2750
 $Comp
@@ -1478,4 +1274,164 @@ Wire Notes Line
 	6250 3050 6250 650 
 Wire Notes Line
 	2850 650  6250 650 
+Text Label 6500 4300 2    50   ~ 0
+3v3_MCU
+Wire Wire Line
+	7550 3650 7550 4200
+Wire Wire Line
+	7550 3650 7800 3650
+Wire Wire Line
+	7800 3650 7800 3700
+Wire Wire Line
+	6200 5800 6650 5800
+Wire Wire Line
+	6200 5900 6650 5900
+Wire Wire Line
+	6650 6000 6200 6000
+Wire Wire Line
+	6200 4300 7650 4300
+Wire Wire Line
+	6200 4800 7650 4800
+Wire Wire Line
+	6200 4700 7650 4700
+Wire Wire Line
+	6200 4600 7650 4600
+Wire Wire Line
+	6200 4500 7650 4500
+Wire Wire Line
+	6200 4900 7650 4900
+Wire Wire Line
+	6200 5000 7650 5000
+Wire Wire Line
+	6200 5100 7650 5100
+Wire Wire Line
+	6200 4400 7650 4400
+Wire Wire Line
+	6200 5200 7650 5200
+Wire Wire Line
+	6200 5400 7650 5400
+Wire Wire Line
+	6200 5500 7650 5500
+Wire Wire Line
+	6200 5700 6650 5700
+Wire Wire Line
+	7100 5600 7100 5650
+Wire Wire Line
+	6200 5600 7100 5600
+Text Label 6650 5800 2    50   ~ 0
+SD2
+Text Label 6650 5900 2    50   ~ 0
+SD3
+Wire Wire Line
+	8200 5850 8200 6150
+Wire Wire Line
+	8300 5850 8300 6150
+Wire Wire Line
+	8400 5850 8400 6150
+Text Label 8200 6150 1    50   ~ 0
+SD2
+Text Label 8300 6150 1    50   ~ 0
+SD3
+Text Label 8400 6150 1    50   ~ 0
+CMD
+Wire Wire Line
+	6650 6100 6200 6100
+$Comp
+L power:GND #PWR047
+U 1 1 601E97FA
+P 10100 3900
+F 0 "#PWR047" H 10100 3650 50  0001 C CNN
+F 1 "GND" H 10105 3727 50  0000 C CNN
+F 2 "" H 10100 3900 50  0001 C CNN
+F 3 "" H 10100 3900 50  0001 C CNN
+	1    10100 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 3900 10100 3800
+Wire Wire Line
+	10100 3800 9950 3800
+Wire Wire Line
+	9950 3800 9950 4200
+Wire Wire Line
+	9950 4200 10350 4200
+Wire Wire Line
+	9950 4800 9950 4200
+Wire Wire Line
+	9950 4800 10350 4800
+Connection ~ 9950 4200
+Text Label 10100 5800 0    50   ~ 0
+SD1
+Text Label 10100 5900 0    50   ~ 0
+SD0
+Wire Wire Line
+	10100 6000 10350 6000
+Text Label 10100 6000 0    50   ~ 0
+CLK
+Wire Wire Line
+	8500 5850 8500 6150
+Wire Wire Line
+	8600 5850 8600 6150
+Wire Wire Line
+	8700 5850 8700 6150
+Text Label 8700 6150 1    50   ~ 0
+SD1
+Text Label 8600 6150 1    50   ~ 0
+SD0
+Text Label 8500 6150 1    50   ~ 0
+CLK
+Wire Wire Line
+	6200 5300 7650 5300
+$Comp
+L Connector:Conn_01x19_Female J7
+U 1 1 602578F3
+P 6000 5200
+F 0 "J7" H 5900 6350 50  0000 C CNN
+F 1 "Conn_01x19_Female" H 5650 6250 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x19_P2.54mm_Vertical" H 6000 5200 50  0001 C CNN
+F 3 "~" H 6000 5200 50  0001 C CNN
+	1    6000 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x19_Female J8
+U 1 1 6027A0C8
+P 10550 5100
+F 0 "J8" H 10450 6250 50  0000 C CNN
+F 1 "Conn_01x19_Female" H 10650 6150 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x19_P2.54mm_Vertical" H 10550 5100 50  0001 C CNN
+F 3 "~" H 10550 5100 50  0001 C CNN
+	1    10550 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 5400 10350 5400
+Wire Wire Line
+	9250 5500 10350 5500
+Wire Wire Line
+	9250 5300 10350 5300
+Wire Wire Line
+	9250 5200 10350 5200
+Wire Wire Line
+	9250 5100 10350 5100
+Wire Wire Line
+	9250 5000 10350 5000
+Wire Wire Line
+	9250 4900 10350 4900
+Wire Wire Line
+	9250 4700 10350 4700
+Wire Wire Line
+	9250 4600 10350 4600
+Wire Wire Line
+	9250 4500 10350 4500
+Wire Wire Line
+	9500 4150 9500 3650
+Wire Wire Line
+	9500 3650 9050 3650
+Wire Wire Line
+	9050 3650 9050 3700
+Wire Wire Line
+	9250 4400 10350 4400
+Wire Wire Line
+	9250 4300 10350 4300
 $EndSCHEMATC

@@ -1696,4 +1696,100 @@ Wire Wire Line
 Connection ~ 3200 2250
 Wire Wire Line
 	3200 2250 3000 2250
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5FE9C0CB
+P 10450 4250
+AR Path="/5F63A00B/5FE9C0CB" Ref="J?"  Part="1" 
+AR Path="/5F63A0E9/5FE9C0CB" Ref="J13"  Part="1" 
+F 0 "J13" H 10350 4300 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 10100 4200 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10450 4250 50  0001 C CNN
+F 3 "~" H 10450 4250 50  0001 C CNN
+	1    10450 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 4250 10850 4250
+Wire Wire Line
+	10650 4350 10850 4350
+$Comp
+L power:GND #PWR040
+U 1 1 5FEC3738
+P 10850 4500
+F 0 "#PWR040" H 10850 4250 50  0001 C CNN
+F 1 "GND" H 10855 4327 50  0000 C CNN
+F 2 "" H 10850 4500 50  0001 C CNN
+F 3 "" H 10850 4500 50  0001 C CNN
+	1    10850 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 4350 10850 4500
+Text Label 10850 4250 2    50   ~ 0
+5V
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5FED3368
+P 10250 1150
+AR Path="/5F63A00B/5FED3368" Ref="J?"  Part="1" 
+AR Path="/5F63A0E9/5FED3368" Ref="J12"  Part="1" 
+F 0 "J12" H 10150 1200 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 9900 1100 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10250 1150 50  0001 C CNN
+F 3 "~" H 10250 1150 50  0001 C CNN
+	1    10250 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 1150 10850 1150
+Wire Wire Line
+	10450 1250 10850 1250
+$Comp
+L power:GND #PWR022
+U 1 1 5FED3370
+P 10850 1400
+F 0 "#PWR022" H 10850 1150 50  0001 C CNN
+F 1 "GND" H 10855 1227 50  0000 C CNN
+F 2 "" H 10850 1400 50  0001 C CNN
+F 3 "" H 10850 1400 50  0001 C CNN
+	1    10850 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 1250 10850 1400
+Text Label 10850 1150 2    50   ~ 0
+3v3_MCU
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5FEEEF8D
+P 2700 5000
+AR Path="/5F63A00B/5FEEEF8D" Ref="J?"  Part="1" 
+AR Path="/5F63A0E9/5FEEEF8D" Ref="J11"  Part="1" 
+F 0 "J11" H 2600 5050 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 2350 4950 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2700 5000 50  0001 C CNN
+F 3 "~" H 2700 5000 50  0001 C CNN
+	1    2700 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 5000 3100 5000
+Wire Wire Line
+	2900 5100 3100 5100
+$Comp
+L power:GND #PWR014
+U 1 1 5FEEEF95
+P 3100 5250
+F 0 "#PWR014" H 3100 5000 50  0001 C CNN
+F 1 "GND" H 3105 5077 50  0000 C CNN
+F 2 "" H 3100 5250 50  0001 C CNN
+F 3 "" H 3100 5250 50  0001 C CNN
+	1    3100 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 5100 3100 5250
+Text Label 3100 5000 2    50   ~ 0
+3v3
 $EndSCHEMATC

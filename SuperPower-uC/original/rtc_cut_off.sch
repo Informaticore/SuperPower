@@ -116,7 +116,7 @@ U 1 1 5F78D93A
 P 4350 2300
 F 0 "J6" H 4250 2350 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 4000 2250 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4350 2300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4350 2300 50  0001 C CNN
 F 3 "~" H 4350 2300 50  0001 C CNN
 	1    4350 2300
 	0    -1   -1   0   
