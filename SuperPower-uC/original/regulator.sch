@@ -1792,4 +1792,22 @@ Wire Wire Line
 	3100 5100 3100 5250
 Text Label 3100 5000 2    50   ~ 0
 3v3
+Text Label 6200 2050 0    50   ~ 0
+3v3_Vin
+Text Label 8050 1550 0    50   ~ 0
+3v3_FB
+Text Label 8050 1650 0    50   ~ 0
+3v3_PG
+Text Label 6350 1850 0    50   ~ 0
+3v3_L2
+Text Label 6350 1750 0    50   ~ 0
+3v3_L1
+Text Label 3800 1950 0    50   ~ 0
+3v3_OnOff
+Text Label 8050 2300 0    50   ~ 0
+3v3_Vaux
+Text Label 6250 1550 0    50   ~ 0
+3v3_EN
+Text Label 3700 1600 0    50   ~ 0
+3v3_OnOff_Gate
 $EndSCHEMATC
