@@ -1810,4 +1810,18 @@ Text Label 6250 1550 0    50   ~ 0
 3v3_EN
 Text Label 3700 1600 0    50   ~ 0
 3v3_OnOff_Gate
+Text Label 6350 4600 0    50   ~ 0
+5V_EN
+Text Label 6300 5100 0    50   ~ 0
+5V_Vin
+Text Label 6500 4800 0    50   ~ 0
+5V_L1
+Text Label 6500 4900 0    50   ~ 0
+5V_L2
+Text Label 8250 4600 0    50   ~ 0
+5V_FB
+Text Label 8250 4700 0    50   ~ 0
+5V_PG
+Text Label 8250 5350 0    50   ~ 0
+5V_Vaux
 $EndSCHEMATC
