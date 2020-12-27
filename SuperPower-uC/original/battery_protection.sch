@@ -726,4 +726,10 @@ F 44 "ManWithNoName" H 3000 1600 50  0001 C CNN "Designer"
 	1    3000 1600
 	-1   0    0    -1  
 $EndComp
+Text Label 3000 4350 0    50   ~ 0
+CO
+Text Label 2500 4350 0    50   ~ 0
+DO
+Text Label 3450 3850 0    50   ~ 0
+VM
 $EndSCHEMATC

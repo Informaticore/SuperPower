@@ -853,4 +853,10 @@ Wire Wire Line
 Connection ~ 9650 3350
 Wire Notes Line
 	10300 3450 10300 3250
+Text Label 3150 5300 0    50   ~ 0
+CC1
+Text Label 3150 5400 0    50   ~ 0
+CC2
+Text Label 2050 6700 0    50   ~ 0
+Shield
 $EndSCHEMATC

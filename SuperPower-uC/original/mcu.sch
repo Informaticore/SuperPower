@@ -763,42 +763,36 @@ Connection ~ 3200 2100
 $Comp
 L Connector:TestPoint TP29
 U 1 1 5FBB75FF
-P 5650 2400
-F 0 "TP29" V 5650 2600 50  0000 L CNN
-F 1 "TestPoint" V 5650 2700 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2400 50  0001 C CNN
-F 3 "~" H 5850 2400 50  0001 C CNN
-	1    5650 2400
+P 5800 2400
+F 0 "TP29" V 5800 2600 50  0000 L CNN
+F 1 "TestPoint" V 5800 2700 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6000 2400 50  0001 C CNN
+F 3 "~" H 6000 2400 50  0001 C CNN
+	1    5800 2400
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint TP30
 U 1 1 5FBC1FC0
-P 5650 2500
-F 0 "TP30" V 5650 2688 50  0000 L CNN
-F 1 "TestPoint" V 5695 2688 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2500 50  0001 C CNN
-F 3 "~" H 5850 2500 50  0001 C CNN
-	1    5650 2500
+P 5800 2500
+F 0 "TP30" V 5800 2688 50  0000 L CNN
+F 1 "TestPoint" V 5845 2688 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6000 2500 50  0001 C CNN
+F 3 "~" H 6000 2500 50  0001 C CNN
+	1    5800 2500
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint TP31
 U 1 1 5FBC21DE
-P 5650 2600
-F 0 "TP31" V 5650 2788 50  0000 L CNN
-F 1 "TestPoint" V 5695 2788 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2600 50  0001 C CNN
-F 3 "~" H 5850 2600 50  0001 C CNN
-	1    5650 2600
+P 5800 2600
+F 0 "TP31" V 5800 2788 50  0000 L CNN
+F 1 "TestPoint" V 5845 2788 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6000 2600 50  0001 C CNN
+F 3 "~" H 6000 2600 50  0001 C CNN
+	1    5800 2600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5650 2400 5450 2400
-Wire Wire Line
-	5450 2500 5650 2500
-Wire Wire Line
-	5650 2600 5450 2600
 Text Label 6650 5700 2    50   ~ 0
 EN_5V
 Text Label 6500 5500 2    50   ~ 0
@@ -1125,82 +1119,62 @@ Wire Wire Line
 Wire Wire Line
 	9250 2350 8950 2350
 Connection ~ 8950 2350
-Wire Wire Line
-	8800 1300 9100 1300
-Text Label 9100 1300 2    50   ~ 0
+Text Label 10250 1650 2    50   ~ 0
 EN
-Wire Wire Line
-	8250 2650 9100 2650
-Text Label 9100 2650 2    50   ~ 0
-IO0
 $Comp
 L power:GND #PWR055
 U 1 1 5F8CBC56
-P 10200 1600
-F 0 "#PWR055" H 10200 1350 50  0001 C CNN
-F 1 "GND" H 10205 1427 50  0000 C CNN
-F 2 "" H 10200 1600 50  0001 C CNN
-F 3 "" H 10200 1600 50  0001 C CNN
-	1    10200 1600
+P 9900 1950
+F 0 "#PWR055" H 9900 1700 50  0001 C CNN
+F 1 "GND" H 9905 1777 50  0000 C CNN
+F 2 "" H 9900 1950 50  0001 C CNN
+F 3 "" H 9900 1950 50  0001 C CNN
+	1    9900 1950
 	1    0    0    -1  
 $EndComp
-Text Label 9550 1550 0    50   ~ 0
-EN
 Wire Wire Line
-	9550 1550 9750 1550
+	9900 1650 9900 1700
 $Comp
 L Device:C_Small C13
 U 1 1 5F8C82E0
-P 9850 1550
-F 0 "C13" H 9942 1596 50  0000 L CNN
-F 1 "1µF" H 9942 1505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9850 1550 50  0001 C CNN
-F 3 "~" H 9850 1550 50  0001 C CNN
-	1    9850 1550
-	0    1    1    0   
+P 9900 1800
+F 0 "C13" H 9992 1846 50  0000 L CNN
+F 1 "1µF" H 9992 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9900 1800 50  0001 C CNN
+F 3 "~" H 9900 1800 50  0001 C CNN
+	1    9900 1800
+	-1   0    0    1   
 $EndComp
-Text Label 9550 2050 0    50   ~ 0
-EN
 $Comp
 L Device:R_Small R37
 U 1 1 5FE5C5F7
-P 9900 2050
-F 0 "R37" H 9959 2096 50  0000 L CNN
-F 1 "12k" H 9959 2005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9900 2050 50  0001 C CNN
-F 3 "~" H 9900 2050 50  0001 C CNN
-	1    9900 2050
-	0    1    1    0   
+P 9900 1500
+F 0 "R37" H 9959 1546 50  0000 L CNN
+F 1 "12k" H 9959 1455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9900 1500 50  0001 C CNN
+F 3 "~" H 9900 1500 50  0001 C CNN
+	1    9900 1500
+	-1   0    0    1   
 $EndComp
-Text Label 10550 2050 2    50   ~ 0
+Text Label 10250 1150 2    50   ~ 0
 3v3_MCU
-Wire Wire Line
-	9550 2050 9800 2050
-Wire Wire Line
-	10000 2050 10550 2050
 $Comp
 L Device:R_Small R38
 U 1 1 5FE7288F
-P 9900 2350
-F 0 "R38" H 9959 2396 50  0000 L CNN
-F 1 "12k" H 9959 2305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9900 2350 50  0001 C CNN
-F 3 "~" H 9900 2350 50  0001 C CNN
-	1    9900 2350
-	0    1    1    0   
+P 9600 2450
+F 0 "R38" H 9659 2496 50  0000 L CNN
+F 1 "12k" H 9659 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9600 2450 50  0001 C CNN
+F 3 "~" H 9600 2450 50  0001 C CNN
+	1    9600 2450
+	-1   0    0    1   
 $EndComp
-Text Label 10550 2350 2    50   ~ 0
+Text Label 9550 2100 2    50   ~ 0
 3v3_MCU
-Wire Wire Line
-	9550 2350 9800 2350
-Wire Wire Line
-	10000 2350 10550 2350
-Text Label 9550 2350 0    50   ~ 0
+Text Label 10200 2650 2    50   ~ 0
 IO0
 Wire Wire Line
-	10200 1600 10200 1550
-Wire Wire Line
-	10200 1550 9950 1550
+	9900 1950 9900 1900
 Text Notes 8200 3300 0    50   ~ 0
 Autoflash/reset circuit:\nAllows the USB-UART\nbridge to reset the MCU\nand to boot the MCU\nin flashing\n(programmation) mode.
 Wire Notes Line
@@ -1434,4 +1408,44 @@ Wire Wire Line
 	9250 4400 10350 4400
 Wire Wire Line
 	9250 4300 10350 4300
+Wire Wire Line
+	5450 2600 5800 2600
+Wire Wire Line
+	5450 2500 5800 2500
+Wire Wire Line
+	5450 2400 5800 2400
+Text Label 5550 2400 0    50   ~ 0
+CHREN
+Text Label 5550 2500 0    50   ~ 0
+CHR0
+Text Label 5550 2600 0    50   ~ 0
+CHR1
+Text Label 3750 1600 0    50   ~ 0
+Vbus
+Wire Wire Line
+	9450 1300 9450 1650
+Wire Wire Line
+	9450 1650 9900 1650
+Wire Wire Line
+	8800 1300 9450 1300
+Wire Wire Line
+	9900 1600 9900 1650
+Connection ~ 9900 1650
+Wire Wire Line
+	9900 1400 9900 1150
+Wire Wire Line
+	9900 1150 10250 1150
+Wire Wire Line
+	9600 2350 9600 2100
+Wire Wire Line
+	9600 2100 9250 2100
+Wire Wire Line
+	9600 2650 9600 2550
+Wire Wire Line
+	8250 2650 9600 2650
+Wire Wire Line
+	9600 2650 10200 2650
+Connection ~ 9600 2650
+Wire Wire Line
+	9900 1650 10250 1650
 $EndSCHEMATC
