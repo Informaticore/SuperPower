@@ -109,12 +109,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR033
 U 1 1 5F75816F
-P 7450 4950
-F 0 "#PWR033" H 7450 4700 50  0001 C CNN
-F 1 "GND" H 7455 4777 50  0000 C CNN
-F 2 "" H 7450 4950 50  0001 C CNN
-F 3 "" H 7450 4950 50  0001 C CNN
-	1    7450 4950
+P 7450 5050
+F 0 "#PWR033" H 7450 4800 50  0001 C CNN
+F 1 "GND" H 7455 4877 50  0000 C CNN
+F 2 "" H 7450 5050 50  0001 C CNN
+F 3 "" H 7450 5050 50  0001 C CNN
+	1    7450 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -659,7 +659,7 @@ Wire Notes Line
 Wire Wire Line
 	7450 4350 8150 4350
 Wire Wire Line
-	7450 4750 7450 4950
+	7450 4750 7450 5050
 Text Notes 8550 5450 0    50   ~ 10
 Connectors
 Text Notes 8200 4150 0    59   ~ 12
@@ -1828,4 +1828,80 @@ Text Label 2250 3750 0    50   ~ 0
 ~SMBALERT_LED
 Text Label 6800 1850 0    50   ~ 0
 Vgate
+$Comp
+L nb21j50103jbb:NB21J50103JBB TH1
+U 1 1 60203657
+P 6800 5100
+F 0 "TH1" H 6898 5328 50  0000 L CNN
+F 1 "DNP/NB21J50103JBB" H 6898 5237 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6800 5150 50  0001 C CNN
+F 3 "http://datasheets.avx.com/nb21-nb12-nb20.pdf" H 6800 5150 50  0001 C CNN
+F 4 "AVX" H 6800 5100 50  0001 C CNN "Mfr_name"
+F 5 "NB21J50103JBB" H 6800 5100 50  0001 C CNN "Mfr_no"
+F 6 "0603" H 6898 5146 50  0000 L CNN "Package"
+F 7 "CTN" H 6800 5100 50  0001 C CNN "thms_Type"
+F 8 "10kΩ" H 6898 5055 50  0000 L CNN "thms_Value"
+F 9 "5%" H 6898 4964 50  0000 L CNN "thms_Tolerance"
+F 10 "-55°C_to_+150°C" H 6800 5100 50  0001 C CNN "thms_Temp_Range"
+F 11 "4s" H 6800 5100 50  0001 C CNN "thms_Thermal_Time_Constant"
+F 12 "3480 (±3%)" H 6898 4873 50  0000 L CNN "thms_Beta_Constant"
+F 13 "https://octopart.com/nb21j50103jbb-avx-8449209?r=sp" H 6800 5100 50  0001 C CNN "Octopart_link"
+F 14 "https://fr.farnell.com/avx/nb21j50103jbb/thermistance-ctn-10k-0603/dp/1672340?st=NB21J50103JBB" H 6800 5100 50  0001 C CNN "Farnell_link"
+F 15 "1672340" H 6800 5100 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-21" H 6800 5100 50  0001 C CNN "Farnell_check_date"
+F 17 "-" H 6800 5100 50  0001 C CNN "Farnell_price_qt=1"
+F 18 "0,345 €" H 6800 5100 50  0001 C CNN "Farnell_price_qt=10"
+F 19 "0,273 €" H 6800 5100 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "0,221 €" H 6800 5100 50  0001 C CNN "Farnell_price_qt=1000"
+F 21 "7,076" H 6800 5100 50  0001 C CNN "Farnell_stock"
+F 22 "-" H 6800 5100 50  0001 C CNN "LCSC_link"
+F 23 "-" H 6800 5100 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-21" H 6800 5100 50  0001 C CNN "LCSC_check_date"
+F 25 "-" H 6800 5100 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "-" H 6800 5100 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "-" H 6800 5100 50  0001 C CNN "LCSC_price_qt=100"
+F 28 "-" H 6800 5100 50  0001 C CNN "LCSC_price_qt=1000"
+F 29 "-" H 6800 5100 50  0001 C CNN "LCSC_stock"
+F 30 "https://eu.mouser.com/ProductDetail/AVX/NB21J50103JBB/?qs=%2Fha2pyFaduhUy%2FEg1uqHXntEXn44Wy%252BSIKjk0tx541cgq2JndSnUMg%3D%3D" H 6800 5100 50  0001 C CNN "Mouser_link"
+F 31 "Not Assigned" H 6800 5100 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-21" H 6800 5100 50  0001 C CNN "Mouser_check_date"
+F 33 "-" H 6800 5100 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "-" H 6800 5100 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "-" H 6800 5100 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "-" H 6800 5100 50  0001 C CNN "Mouser_price_qt=1000"
+F 37 "-" H 6800 5100 50  0001 C CNN "Mouser_stock"
+F 38 "https://fr.rs-online.com/web/p/thermistances/6976758/" H 6800 5100 50  0001 C CNN "RS_link"
+F 39 "697-6758" H 6800 5100 50  0001 C CNN "RS_ref"
+F 40 "2020-12-21" H 6800 5100 50  0001 C CNN "RS_check_date"
+F 41 "-" H 6800 5100 50  0001 C CNN "RS_price_qt=1"
+F 42 "0,382 €" H 6800 5100 50  0001 C CNN "RS_price_qt=10"
+F 43 "0,288 €" H 6800 5100 50  0001 C CNN "RS_price_qt=100"
+F 44 "0,226 €" H 6800 5100 50  0001 C CNN "RS_price_qt=1000"
+F 45 "6,335" H 6800 5100 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 6800 5100 50  0001 C CNN "Status"
+F 47 "1.00" H 6800 5100 50  0001 C CNN "Release_version"
+F 48 "2020-12-21" H 6800 5100 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 6800 5100 50  0001 C CNN "Designer"
+	1    6800 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR057
+U 1 1 60205C13
+P 6800 5350
+F 0 "#PWR057" H 6800 5100 50  0001 C CNN
+F 1 "GND" H 6805 5177 50  0000 C CNN
+F 2 "" H 6800 5350 50  0001 C CNN
+F 3 "" H 6800 5350 50  0001 C CNN
+	1    6800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 5250 6800 5350
+Wire Wire Line
+	6800 4950 6800 4900
+Wire Wire Line
+	6800 4900 6400 4900
+Text Notes 6900 5450 0    50   ~ 0
+Do Not Populate (Default)
 $EndSCHEMATC

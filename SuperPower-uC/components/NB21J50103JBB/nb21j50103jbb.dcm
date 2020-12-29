@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NB21J50103JBB
+D Thermistor, NTC, US symbol, 0603, 10k
+K thermistor NTC resistor sensor RTD
+F http://datasheets.avx.com/nb21-nb12-nb20.pdf
+$ENDCMP
+#
+#End Doc Library

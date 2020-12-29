@@ -481,28 +481,6 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Jumper_NC_Small
-#
-DEF Device_Jumper_NC_Small JP 0 30 N N 1 F N
-F0 "JP" 0 80 50 H V C CNN
-F1 "Device_Jumper_NC_Small" 10 -60 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SolderJumper*Bridged*
- Jumper*
- TestPoint*2Pads*
- TestPoint*Bridge*
-$ENDFPLIST
-DRAW
-A 0 -10 57 450 1350 0 1 0 N 40 30 -40 30
-C -40 0 20 0 1 0 N
-C 40 0 20 0 1 0 N
-X 1 1 -100 0 40 R 50 50 0 1 P
-X 2 2 100 0 40 L 50 50 0 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_Q_NPN_CEB
 #
 DEF Device_Q_NPN_CEB Q 0 0 Y N 1 F N
@@ -691,6 +669,28 @@ X ~RSTb 9 -500 900 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# Jumper_SolderJumper_2_Open
+#
+DEF Jumper_SolderJumper_2_Open JP 0 0 Y N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Jumper_SolderJumper_2_Open" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+$ENDFPLIST
+DRAW
+A -10 0 40 901 -901 0 1 0 N -10 40 -10 -40
+A -10 0 40 901 -901 0 1 0 F -10 40 -10 -40
+A 10 0 40 -899 899 0 1 0 N 10 -40 10 40
+A 10 0 40 -899 899 0 1 0 F 10 -40 10 40
+P 2 0 1 0 -10 40 -10 -40 N
+P 2 0 1 0 10 40 10 -40 N
+X A 1 -150 0 100 R 50 50 1 1 P
+X B 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # LED_SK6812
 #
 DEF LED_SK6812 D 0 10 Y Y 1 F N
@@ -774,6 +774,26 @@ P 2 0 1 0 -100 50 100 50 N
 P 2 0 1 0 0 50 0 100 N
 X ~ 1 -300 0 200 R 50 50 1 1 B
 X ~ 2 300 0 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_DIP_x01
+#
+DEF Switch_SW_DIP_x01 SW 0 0 Y N 1 F N
+F0 "SW" 0 150 50 H V C CNN
+F1 "Switch_SW_DIP_x01" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SW?DIP?x1*
+$ENDFPLIST
+DRAW
+C -80 0 20 0 0 0 N
+C 80 0 20 0 0 0 N
+S -150 100 150 -100 0 1 10 f
+P 2 0 0 0 -60 5 93 46 N
+X ~ 1 -300 0 200 R 50 50 1 1 P
+X ~ 2 300 0 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -1980,6 +2000,89 @@ X INFET 6 -600 600 100 R 50 50 1 1 O
 X Vin 7 -600 450 100 R 50 50 1 1 W
 X VCC2P5 8 -600 -650 100 R 50 50 1 1 w
 X NTCbias 9 600 -500 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# nb21j50103jbb_NB21J50103JBB
+#
+DEF nb21j50103jbb_NB21J50103JBB TH 0 0 N Y 1 F N
+F0 "TH" -175 0 50 V V C CNN
+F1 "nb21j50103jbb_NB21J50103JBB" 125 0 50 V V C CNN
+F2 "Resistor_SMD:R_0603_1608Metric" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+F4 "AVX" 0 0 50 H I C CNN "Mfr_name"
+F5 "NB21J50103JBB" 0 0 50 H I C CNN "Mfr_no"
+F6 "0603" 275 -150 50 H V C CNN "Package"
+F7 "CTN" 0 0 50 H I C CNN "thms_Type"
+F8 "10kΩ" 275 -75 50 H V C CNN "thms_Value"
+F9 "5%" 475 -150 50 H V C CNN "thms_Tolerance"
+F10 "-55°C_to_+150°C" 0 0 50 H I C CNN "thms_Temp_Range"
+F11 "4s" 0 0 50 H I C CNN "thms_Thermal_Time_Constant"
+F12 "3480 (±3%)" 400 -225 50 H V C CNN "thms_Beta_Constant"
+F13 "https://octopart.com/nb21j50103jbb-avx-8449209?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F14 "https://fr.farnell.com/avx/nb21j50103jbb/thermistance-ctn-10k-0603/dp/1672340?st=NB21J50103JBB" 0 0 50 H I C CNN "Farnell_link"
+F15 "1672340" 0 0 50 H I C CNN "Farnell_ref"
+F16 "2020-12-21" 0 0 50 H I C CNN "Farnell_check_date"
+F17 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F18 "0,345 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F19 "0,273 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F20 "0,221 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F21 "7,076" 0 0 50 H I C CNN "Farnell_stock"
+F22 "-" 0 0 50 H I C CNN "LCSC_link"
+F23 "-" 0 0 50 H I C CNN "LCSC_ref"
+F24 "2020-12-21" 0 0 50 H I C CNN "LCSC_check_date"
+F25 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F26 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F27 "-" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F28 "-" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F29 "-" 0 0 50 H I C CNN "LCSC_stock"
+F30 "https://eu.mouser.com/ProductDetail/AVX/NB21J50103JBB/?qs=%2Fha2pyFaduhUy%2FEg1uqHXntEXn44Wy%252BSIKjk0tx541cgq2JndSnUMg%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F31 "Not Assigned" 0 0 50 H I C CNN "Mouser_ref"
+F32 "2020-12-21" 0 0 50 H I C CNN "Mouser_check_date"
+F33 "-" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F34 "-" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F35 "-" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F36 "-" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F37 "-" 0 0 50 H I C CNN "Mouser_stock"
+F38 "https://fr.rs-online.com/web/p/thermistances/6976758/" 0 0 50 H I C CNN "RS_link"
+F39 "697-6758" 0 0 50 H I C CNN "RS_ref"
+F40 "2020-12-21" 0 0 50 H I C CNN "RS_check_date"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F42 "0,382 €" 0 0 50 H I C CNN "RS_price_qt=10"
+F43 "0,288 €" 0 0 50 H I C CNN "RS_price_qt=100"
+F44 "0,226 €" 0 0 50 H I C CNN "RS_price_qt=1000"
+F45 "6,335" 0 0 50 H I C CNN "RS_stock"
+F46 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F47 "1.00" 0 0 50 H I C CNN "Release_version"
+F48 "2020-12-21" 0 0 50 H I C CNN "Release_date"
+F49 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ *NTC*
+ *Thermistor*
+ PIN?ARRAY*
+ bornier*
+ *Terminal?Block*
+ R_*
+$ENDFPLIST
+DRAW
+A -126 88 7 -265 818 0 1 0 N -120 85 -125 95
+A -110 85 10 1800 -900 0 1 0 N -120 85 -110 75
+A -110 85 10 -900 0 0 1 0 N -110 75 -100 85
+A -110 110 10 0 900 0 1 0 N -100 110 -110 120
+A -110 110 10 900 1800 0 1 0 N -110 120 -120 110
+A -110 110 10 1800 -900 0 1 0 N -120 110 -110 100
+A -104 119 20 -1075 -253 0 1 0 N -110 100 -85 110
+P 2 0 1 0 -100 85 -100 110 N
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 90 0 100 N
+P 4 0 1 0 -70 100 -70 60 70 -60 70 -100 N
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
+P 6 0 1 0 -100 -145 -100 -55 -110 -85 -90 -85 -100 -55 -100 -65 F
+P 6 0 1 0 -70 -55 -70 -145 -80 -115 -60 -115 -70 -145 -70 -135 F
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
